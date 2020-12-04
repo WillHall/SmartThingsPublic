@@ -84,7 +84,8 @@ metadata {
 		// SONOFF
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006", outClusters: "0000", manufacturer: "SONOFF", model: "BASICZBR3", deviceJoinName: "SONOFF Outlet", ocfDeviceType: "oic.d.smartplug" //SONOFF Basic (R3 Zigbee)
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006", outClusters: "0000", manufacturer: "SONOFF", model: "S31 Lite zb", deviceJoinName: "S31 Outlet", ocfDeviceType: "oic.d.smartplug" //S31 Lite zb
-		
+		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006", outClusters: "1000", manufacturer: "SONOFF", model: "01MINIZB", deviceJoinName: "SONOFF 01MINIZB" //01MINIZB
+        
 		// Terncy
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0006", outClusters: "0019", manufacturer: "", model: "TERNCY-LS01", deviceJoinName: "Terncy Switch" //Terncy Smart Light Socket
 
@@ -95,6 +96,14 @@ metadata {
 		// Dawon
 		fingerprint profileId: "0104", inClusters: "0000, 0004, 0003, 0006, 0019, 0002, 0009", manufacturer: "DAWON_DNS", model: "PM-S140-ZB", deviceJoinName: "Dawon Switch" //DAWOS DNS In-Wall Switch PM-S140-ZB
 		fingerprint profileId: "0104", inClusters: "0000, 0004, 0003, 0006, 0019, 0002, 0009", manufacturer: "DAWON_DNS", model: "PM-S140R-ZB", deviceJoinName: "Dawon Switch" //DAWOS DNS In-Wall Switch PM-S140R-ZB
+		fingerprint profileId: "0104", inClusters: "0000, 0002, 0003, 0006", manufacturer: "DAWON_DNS", model: "PM-S150-ZB", deviceJoinName: "Dawon Switch" //DAWOS DNS In-Wall Switch PM-S150-ZB
+		fingerprint profileId: "0104", inClusters: "0000, 0002, 0003, 0006", manufacturer: "DAWON_DNS", model: "ST-S150-ZB", deviceJoinName: "Dawon Switch" //DAWOS DNS In-Wall Switch ST-S150-ZB
+
+		// Enbrighten/Jasco
+		fingerprint manufacturer: "Jasco Products", model: "43100", deviceJoinName: "Enbrighten Switch" //Enbrighten, Plug-in Outdoor Smart Switch, 43100, Raw Description: 01 0104 0100 00 06 0000 0003 0004 0005 0006 0B05 02 000A 0019
+		fingerprint manufacturer: "Jasco Products", model: "43084", deviceJoinName: "Enbrighten Switch" //Enbrighten, In-Wall Smart Switch, Toggle, 43084, Raw Description: 01 0104 0100 00 06 0000 0003 0004 0005 0006 0B05 02 000A 0019
+		fingerprint manufacturer: "Jasco Products", model: "43094", deviceJoinName: "Enbrighten Switch" //Enbrighten, Plug-in Smart Switch, 43094, Raw Description: 01 0104 0100 00 06 0000 0003 0004 0005 0006 0B05 02 000A 0019
+		fingerprint manufacturer: "Jasco Products", model: "43102", deviceJoinName: "Enbrighten Switch" //Enbrighten, In-Wall Smart Outlet, 43102, Raw Description:  01 0104 0100 00 06 0000 0003 0004 0005 0006 0B05 02 000A 0019
 	}
 
 	// simulator metadata

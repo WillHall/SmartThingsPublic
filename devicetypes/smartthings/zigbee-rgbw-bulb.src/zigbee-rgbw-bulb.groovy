@@ -96,6 +96,7 @@ metadata {
 
 		// Ajax Online
 		fingerprint manufacturer: "Ajaxonline", model: "AJ-RGBCCT 5 in 1", deviceJoinName: "Ajax Light", mnmn: "SmartThings", vid: "generic-rgbw-color-bulb-2000K-6500K"
+		fingerprint manufacturer: "Ajax online Ltd", model: "AJ_ZB30_GU10", deviceJoinName: "Ajax Light", mnmn: "SmartThings", vid: "generic-rgbw-color-bulb-2000K-6500K" // Raw Description: 0B 0104 010D 01 08 0000 0003 0004 0005 0006 0008 0300 1000 00
 	}
 
 	// UI tile definitions
@@ -222,8 +223,8 @@ def configure() {
 
 	cmds += refresh() +
 	// OnOff, level minReportTime 0 seconds, maxReportTime 5 min. Reporting interval if no activity
-	zigbee.onOffConfig(0, 300) +
-	zigbee.levelConfig(0, 300)
+	zigbee.onOffConfig() +
+	zigbee.levelConfig()
 	cmds
 }
 
